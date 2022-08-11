@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>T_shirts</title>
+</head>
+<body>
+    <h1>T-shirt</h1>
+    {% for i in object_list %}
+        <div class="T_shirts">
+        <h2><a href="/{{ i.pk }}">{{ i.name }}</a></h2>
+        <br><br>
+        </div>
+    {% endfor %}
+</body>
+</html>
